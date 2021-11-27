@@ -1,0 +1,12 @@
+{
+    
+    "webserver": WEBSERVER_FLAG,
+    "ports":{
+        "arch":ARCH_PROXY_PORT, // port for the proxy server
+       "web":WEB_UI_PORT
+    },
+    "address":{ // address arch listens on. if you leave it on 0.0.0.0 you can via all IPs
+    	"arch": "0.0.0.0",
+	"web": "0.0.0.0"
+
+}
