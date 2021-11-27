@@ -1,9 +1,8 @@
 ---
-version: "3"
 services:
-   2bored2wait:
-      image: mrgeorgen/2bored2wait:latest
-      container_name: 2bored2wait
+   piedisabler:
+     
+      container_name: "piedisable"
       stdin_open: true
       tty: true
       ports:
@@ -11,10 +10,10 @@ services:
          - "25565:25566"
       restart: unless-stopped
       environment:
-         MOJANG_USERNAME: Your Minecraft Username
-         MOJANG_PASSWORD: Your Minecraft Password
-         BOT_TOKEN: Your Discord Bot Token
-         DISCORD_BOT: "true"
-         WEBSERVER: "true"
-         MINECRAFT_PORT: 25566
+         GX_USERNAME: "auto_detect" # If it doesn't auto-detect, add it yourself
+         GX_SESSIONID: "" # Add this or else PieSegic may instaban you.
+         BOT_TOKEN: "" # Your discord bot token, if you are running a discord based cheat.
+         DISCORD_BOT: "false" # Enter true if you wish to enter a token.
+         WEBSERVER: "true" # Do not disable unless you are using a vpn
+         GX_PORT: 25565
          WEBUI_PORT: 8080
