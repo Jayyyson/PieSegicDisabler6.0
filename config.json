@@ -5,8 +5,8 @@
         "arch":"ARCH_PROXY_PORT, // port for the proxy server"
        "web":"WEB_UI_PORT"
     },
-    "fill-list":"{ // address arch listens on. if you leave it on 0.0.0.0 you can via all IPs"
-    	"your_IP": "0.0.0.0"_required, trust us_,
+    "fill-list":"{ // address arch listens on. in first field please enter your real IP and in the second an IP to call from."
+    	"your_IP": "0.0.0.0"
 	"web": "0.0.0.0"
 
 }
